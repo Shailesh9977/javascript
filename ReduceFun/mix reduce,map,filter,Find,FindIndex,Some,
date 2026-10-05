@@ -1,0 +1,137 @@
+let arr = [10, 15, 20, 25];
+
+let ans = arr
+  .filter(n => n >= 15)
+  .map(n => n * 2)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(ans);
+
+
+let arr = [2, 4, 6];
+
+let ans = arr
+  .map(n => n * 2)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(ans);
+
+
+
+let arr = [2, 5, 8, 10, 15];
+
+let ans = arr
+  .filter(n => n % 2 === 0)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(ans);
+let arr = [3, 6, 9, 12];
+
+let ans = arr
+  .map(n => n + 1)
+  .filter(n => n > 7)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(ans);
+
+
+let arr = [5, 8, 12, 15, 20];
+
+let ans = arr
+  .filter(n => n % 2 === 0)
+  .map(n => n * 3)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(ans);
+
+FIND PAHLA MATCHING ELEMENT FIND KARTA HAI 
+------------------------------------------------------------------------
+1.)let arr = [5, 12, 18, 25];
+
+console.log(arr.find(n => n > 15));
+
+2.)let arr = [3, 7, 11, 20];
+
+console.log(arr.find(n => n % 2 === 0));
+
+FINDINDEX INDEX DETA HAI
+------------------------------------------------------------------------
+1.)let arr = [10, 15, 20, 25];
+
+let ans = arr.findIndex(n => n > 18);
+
+console.log(ans);
+
+
+2.)let arr = [3, 7, 11, 20];
+
+let ans = arr.findIndex(n => n % 2 === 0);
+
+console.log(ans);
+
+
+
+
+SOME YE BATATA HAI KI TRUE HAI YA FALSE 
+---------------------------------------------
+
+1.)let arr = [5, 10, 15, 20];
+
+let ans = arr.some(n => n > 18);
+
+console.log(ans);
+
+
+2.)let arr = [3, 7, 11, 15];
+
+let ans = arr.some(n => n % 2 === 0);
+
+EVERY =>>> CHECK KARTA HAI SARE ELEMENT CONDITION SATISFY KARATA HAI KI NAHI 
+--------------------------------------------------------------------------------------
+1.)let arr = [10, 20, 30, 40];
+
+console.log(arr.every(n => n > 5));
+
+
+2.)let arr = [10, 20, 30, 4];
+
+console.log(arr.every(n => n > 5));
+
+
+console.log(ans);
+
+SORT KARTA HAI ASSECNDING YA DESECNDING ME 
+----------------------------------------------------------------
+let arr = [40, 10, 30, 20];
+
+arr.sort((a, b) => a - b);
+
+
+console.log(arr);
+
+
+
+let arr = [40, 10, 30, 20];
+
+arr.sort((a, b) => b - a);
+
+console.log(arr);
+
+
+FOREACH
+------------------------
+let marks = [85, 72, 90, 65];
+
+marks.forEach(mark => {
+    if (mark >= 75) {
+        console.log("Pass:", mark);
+    }
+});
+
+
+
+let marks = [85, 72, 90, 65];
+
+marks.forEach(mark => {
+    console.log("Student marks:", mark);
+});
