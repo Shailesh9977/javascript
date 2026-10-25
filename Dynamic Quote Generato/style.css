@@ -13,6 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #f4f4f9;
+   transition: background-color 0.8s ease;
 }
 
 /* Style the main card container */
@@ -24,6 +25,7 @@ body {
   text-align: center;
   max-width: 400px;
   width: 90%;
+  
 }
 
 /* Title styling */
